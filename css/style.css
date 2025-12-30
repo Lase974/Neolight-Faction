@@ -32,7 +32,9 @@ body {
 }
 
 .sidebar nav a {
-  display: block;
+  display: flex;             /* on passe de block à flex */
+  align-items: center;
+  gap: 10px;                 /* espace entre icône et texte */
   padding: 12px;
   margin-bottom: 8px;
   color: #cfcfff;
@@ -45,6 +47,20 @@ body {
 .sidebar nav a.active {
   background: linear-gradient(90deg, #6c5ce7, #8e7dff);
   color: white;
+}
+
+.sidebar nav .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.discord-button {
+  background-color: #5865F2;
+  color: white;
+}
+
+.discord-button:hover {
+  background-color: #4752c4;
 }
 
 /* MAIN */
