@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Recrutement - La Neolight</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>📝 Recrutement</h1>
+
+<form id="recruitForm">
+  <input type="text" placeholder="Pseudo Paladium" id="pseudo" required>
+  <input type="number" placeholder="Âge" id="age" required>
+  <input type="text" placeholder="Temps de jeu / semaine" id="time" required>
+  <textarea placeholder="Motivation" id="motivation" required></textarea>
+  <input type="text" placeholder="Discord (pseudo#0000)" id="discord" required>
+
+  <label>
+    <input type="checkbox" required>
+    J’accepte les règlements
+  </label>
+
+  <button type="submit">Envoyer la candidature</button>
+</form>
+
+<script src="js/webhook.js"></script>
+</body>
+</html>
