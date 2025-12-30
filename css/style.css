@@ -1,74 +1,76 @@
+:root {
+  --bg: #0b0d1a;
+  --panel: #14172b;
+  --accent: #7b6cff;
+  --text: #eaeaff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0b12;
-  color: #e6e6ff;
+  background: var(--bg);
+  color: var(--text);
 }
 
-header {
-  text-align: center;
-  padding: 30px;
-}
-
-.logo {
-  width: 120px;
-}
-
-nav {
+.topbar {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  background: #151525;
-  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #0f1125;
+  border-bottom: 1px solid #1f2360;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  width: 40px;
 }
 
 nav a {
-  color: #bda7ff;
+  margin-left: 20px;
   text-decoration: none;
+  color: var(--text);
   font-weight: bold;
 }
 
+nav a:hover {
+  color: var(--accent);
+}
+
 .container {
-  max-width: 800px;
+  max-width: 1100px;
   margin: auto;
-  padding: 30px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #22256d;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--accent);
 }
 
 .btn {
-  background: #6c5ce7;
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--accent);
   color: white;
-  padding: 15px 25px;
-  text-decoration: none;
   border-radius: 8px;
-  margin: 10px;
-}
-
-.discord {
-  background: #5865F2;
-}
-
-form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, textarea, button {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-}
-
-button {
-  background: #6c5ce7;
-  color: white;
-  cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  opacity: 0.6;
+  text-decoration: none;
+  font-weight: bold;
 }
