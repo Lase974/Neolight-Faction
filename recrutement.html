@@ -7,22 +7,74 @@
 </head>
 <body>
 
-<h1>📝 Recrutement</h1>
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <img src="assets/logo.png" alt="Logo">
+    <span>Neolight</span>
+  </div>
 
-<form id="recruitForm">
-  <input type="text" placeholder="Pseudo Paladium" id="pseudo" required>
-  <input type="number" placeholder="Âge" id="age" required>
-  <input type="text" placeholder="Temps de jeu / semaine" id="time" required>
-  <textarea placeholder="Motivation" id="motivation" required></textarea>
-  <input type="text" placeholder="Discord (pseudo#0000)" id="discord" required>
+  <nav>
+    <a href="index.html">🏠 Accueil</a>
+    <a href="recrutement.html" class="active">📝 Recrutement</a>
+    <a href="membres.html">👥 Membres</a>
+    <a href="infos.html">ℹ️ Infos</a>
+    <a href="https://discord.gg/TONLIEN" target="_blank" class="discord-link">💬 Discord</a>
+  </nav>
+</aside>
 
-  <label>
-    <input type="checkbox" required>
-    J’accepte les règlements
-  </label>
+<!-- MAIN -->
+<main class="main-content">
 
-  <button type="submit">Envoyer la candidature</button>
-</form>
+  <h1 class="page-title">📝 Recrutement</h1>
+  <p class="page-subtitle">
+    Rejoins la faction <strong>La Neolight</strong>.  
+    Les candidatures sont étudiées par le staff.
+  </p>
+
+  <div class="recruit-card">
+    <form id="recruitForm">
+
+      <div class="form-group">
+        <label>Pseudo Paladium</label>
+        <input type="text" id="pseudo" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Âge</label>
+          <input type="number" id="age" required>
+        </div>
+
+        <div class="form-group">
+          <label>Temps de jeu / semaine</label>
+          <input type="text" id="time" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Motivation</label>
+        <textarea id="motivation" rows="5" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Discord (pseudo#0000)</label>
+        <input type="text" id="discord" required>
+      </div>
+
+      <label class="checkbox">
+        <input type="checkbox" required>
+        J’ai lu et j’accepte les règlements
+      </label>
+
+      <button type="submit" class="submit-btn">
+        🚀 Envoyer la candidature
+      </button>
+
+    </form>
+  </div>
+
+</main>
 
 <script src="js/webhook.js"></script>
 </body>
